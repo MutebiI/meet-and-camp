@@ -228,18 +228,18 @@ const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-playfa
 export const metadata: Metadata = {
   title: "Meet and Camp | Britah Cooked Events",
   description: "Connect. Chill. Camp. Create Memories. Join us on the 5th and 6th of December at A Place To Dare.",
-  // This is the magic part for WhatsApp and Social Media
   openGraph: {
     title: "Meet and Camp | Britah Cooked Events",
     description: "Connect. Chill. Camp. All-inclusive tickets starting at 95,000 UGX. Limited spaces available!",
-    url: "https://britah-meet-and-camp.vercel.app/", // UPDATE THIS WITH YOUR LIVE VERCEL LINK
+    url: "https://britah-meet-and-camp.vercel.app", 
     siteName: "Britah Cooked Events",
     images: [
       {
-        url: "/og-image.jpeg", // This assumes you put the image in the public folder
-        width: 1200,
-        height: 630,
-        alt: "Meet and Camp Forest Event",
+        // Updated to match your exact image file and dimensions
+        url: "https://britah-meet-and-camp.vercel.app/og-image.jpg", 
+        width: 825, 
+        height: 1280,
+        alt: "Meet and Camp Flyer",
       },
     ],
     locale: "en_UG",
@@ -249,10 +249,9 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Meet and Camp | Britah Cooked Events",
     description: "Connect. Chill. Camp. Join us on the 5th and 6th of December.",
-    images: ["/og-image.jpg"],
+    images: ["https://britah-meet-and-camp.vercel.app/og-image.jpg"],
   },
 };
-
 export default function RootLayout({
   children,
 }: Readonly<{
